@@ -7,12 +7,38 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = env("DATABASE_URL")
+  url      =  env("DATABASE_URL")
 }
 
 model Project {
-  id String @id @default(uuid())
-  name String
-  price Int
+  id          String             @id @default(uuid())
+  name        String
   description String
+  mainImg     String
+  gallery     String
+
+  technologies ProjectTechnology[]
+
+  createdAt   DateTime           @default(now())
+  updatedAt   DateTime           @updatedAt
+
+  @@index([name])
+}
+
+model Technology {
+  id          String             @id @default(uuid())
+  name        String             @unique
+  projects    ProjectTechnology[]
+
+  @@index([name])
+}
+
+model ProjectTechnology {
+  id          String     @id @default(uuid())
+  projectId   String
+  technologyId String
+  project     Project    @relation(fields: [projectId], references: [id])
+  technology  Technology @relation(fields: [technologyId], references: [id])
+
+  @@unique([projectId, technologyId])
 }
