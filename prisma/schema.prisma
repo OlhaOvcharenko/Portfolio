@@ -12,8 +12,9 @@ datasource db {
 
 model Project {
   id          String             @id @default(uuid())
-  name        String
-  description String
+  title       String
+  paragrapgh1 String
+  paragrapgh2 String
   mainImg     String
   gallery     String
 
@@ -21,16 +22,12 @@ model Project {
 
   createdAt   DateTime           @default(now())
   updatedAt   DateTime           @updatedAt
-
-  @@index([name])
 }
 
 model Technology {
   id          String             @id @default(uuid())
   name        String             @unique
   projects    ProjectTechnology[]
-
-  @@index([name])
 }
 
 model ProjectTechnology {
