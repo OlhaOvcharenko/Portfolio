@@ -1,11 +1,9 @@
-import { Container } from "react-bootstrap";
+import Header from "../../Views/Header/Header";
 
 const Home = () => {
   return (
     <div>
-      <Container>
-       <h1>portfolio</h1>
-      </Container>
+      <Header />
     </div>
   )
 };

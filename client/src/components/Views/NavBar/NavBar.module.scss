@@ -1,0 +1,21 @@
+@import '../../../styles/settings.scss';
+
+.navContainer {
+  margin: 0;
+  padding: 10px 20px 0;
+  background-color: $color-on-background;
+  //position: fixed;
+}
+
+.img {
+  width: 40px;
+  height: auto;
+}
+
+.toggleBtn {
+  background-color: $color-bright;
+}
+
+.link:hover {
+  color: $color-primary;
+}
