@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <section className="NavBar">
       <Navbar expand="lg" className={styles.navContainer}>
-        <Navbar.Brand href="#home" className='text-light'>
+        <Navbar.Brand href="#home" className='text-light pt-0 pb-0'>
           <img 
             src="https://static.wixstatic.com/media/e6e940_daf929c2590b4e42ac8b8ee204a8f1ed~mv2.jpg" 
             alt="Brand Logo" 
