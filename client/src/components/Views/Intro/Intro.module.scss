@@ -10,7 +10,8 @@
 
 .container {
   height: 90vh;
-  background: linear-gradient(135deg, #000000, #603662, #16213e, #0f3460);
+  //background: linear-gradient(135deg, #000000, #603662, #16213e, #0f3460);
+  background:  $color-on-background;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,43 +20,93 @@
   position: relative;
 }
 
+
+.text {
+  max-width: 600px;
+  text-align: center;
+  z-index: 1; 
+  overflow: hidden; 
+
+  h1 {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid $color-primary; 
+    animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+    font-size: 2rem;
+  }
+
+  p {
+    margin: 0.5rem 0;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 4s; 
+  }
+}
+
+
 .arrowContainer {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.112);
-  right: 40px; 
+  right: 40px;  
   top: 50%;
   transform: translateY(-50%);
-  width: 100px;
-  height: 50vh;
+  width: 100px; 
+  height: 50vh; 
   display: flex;
   justify-content: center;
   align-items: center;
-}
-  
-.arrow {
-  width: 40px;  
-  height: 40px; 
-  border-right: 5px solid $color-text-light;
-  border-bottom: 5px solid  $color-text-light;
-  transform: rotate(-45deg);
-  animation: bounce 3s infinite;
-}
-  
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-50%) rotate(-45deg);
-  }
-  50% {
-    transform: translateY(-55%) rotate(-45deg);
-  }
-}
-  
-/* Styling for text */
-h1 {
-  margin-bottom: 1.5rem;
+  animation: bounce 3s infinite; 
 }
 
-p {
-  max-width: 600px;
-  text-align: center;
+.arrow {
+  width: 40px; 
+  height: 40px; 
+  border-right: 5px solid rgba(255, 255, 255, 0.8); 
+  border-bottom: 5px solid rgba(255, 255, 255, 0.8); 
+  transform: rotate(-45deg) translateY(-50%);  
 }
+.arrow:hover {
+  width: 50px;
+  height: 50px;
+  transition: 0.7s;
+}
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(-53%);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+// Cursor blink effect
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: $color-primary;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
