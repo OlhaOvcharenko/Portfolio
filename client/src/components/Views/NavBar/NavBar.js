@@ -12,7 +12,9 @@ const NavBar = () => {
             className={styles.img} 
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="mobile-menu" className={styles.toggleBtn} />
+        <span  className={styles.toggleBtn} >
+          <Navbar.Toggle aria-controls="mobile-menu"/>
+        </span>
         <Navbar.Collapse id="mobile-menu" className="justify-content-end " >
         <Nav>
           <Nav.Link as={NavLink} to="/" className='text-light' >

@@ -20,42 +20,42 @@
 }
 
 .arrowContainer {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.112);
-    right: 40px; 
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100px;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.112);
+  right: 40px; 
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   
 .arrow {
-    width: 40px;  
-    height: 40px; 
-    border-right: 5px solid $color-text-light;
-    border-bottom: 5px solid  $color-text-light;
-    transform: rotate(-45deg);
-    animation: bounce 3s infinite;
+  width: 40px;  
+  height: 40px; 
+  border-right: 5px solid $color-text-light;
+  border-bottom: 5px solid  $color-text-light;
+  transform: rotate(-45deg);
+  animation: bounce 3s infinite;
 }
   
 @keyframes bounce {
-    0%, 100% {
-      transform: translateY(-50%) rotate(-45deg);
-    }
-    50% {
-      transform: translateY(-55%) rotate(-45deg);
-    }
+  0%, 100% {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  50% {
+    transform: translateY(-55%) rotate(-45deg);
+  }
 }
   
-  /* Styling for text */
-  h1 {
-    margin-bottom: 1.5rem;
-  }
-  
-  p {
-    max-width: 600px;
-    text-align: center;
-  }
+/* Styling for text */
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+p {
+  max-width: 600px;
+  text-align: center;
+}
