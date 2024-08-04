@@ -4,13 +4,12 @@
 
 .Intro {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   overflow: hidden;
 }
 
 .container {
-  height: 90vh;
-  //background: linear-gradient(135deg, #000000, #603662, #16213e, #0f3460);
+  height: 100vh;
   background:  $color-on-background;
   display: flex;
   flex-direction: column;
@@ -91,7 +90,6 @@
   }
 }
 
-// Cursor blink effect
 @keyframes blink-caret {
   from, to {
     border-color: transparent;

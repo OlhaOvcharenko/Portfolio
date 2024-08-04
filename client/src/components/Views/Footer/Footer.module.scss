@@ -1,0 +1,21 @@
+@import '../../../styles/settings.scss';
+@import '../../../styles/typography.scss';
+
+
+.footerContainer {
+  position: relative;
+  padding: 20px 0 5px 0;
+  background: rgba(52, 52, 52, 0.8); 
+  text-align: center;
+}
+
+.footerText {
+  padding: 20px 0 5px 0;
+  p {
+    font-size: 12px;
+  }
+}
+
+.socialMedia a{
+  padding: 5px;
+}
