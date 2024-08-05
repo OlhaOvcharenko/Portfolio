@@ -11,7 +11,7 @@ const Intro = () => (
       </div>
     </div>
     <div className={styles.arrowContainer}>
-      <div className={styles.arrow}></div>
+      <span className={styles.arrow}></span>
     </div>
   </section>
 );

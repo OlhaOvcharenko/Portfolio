@@ -15,12 +15,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
   position: relative;
 }
 
 
 .text {
+  margin-top: -50px;
   max-width: 600px;
   text-align: center;
   z-index: 1; 
@@ -51,7 +51,7 @@
   top: 50%;
   transform: translateY(-50%);
   width: 100px; 
-  height: 50vh; 
+  height: 40vh; 
   display: flex;
   justify-content: center;
   align-items: center;
