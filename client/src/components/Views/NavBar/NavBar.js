@@ -17,12 +17,12 @@ const NavBar = () => {
         </span>
         <Navbar.Collapse id="mobile-menu" className="justify-content-end " >
         <Nav>
-          <Nav.Link as={NavLink} to="/" className='text-light' >
+          <Nav.Link href="/" className='text-light' >
             <p className={styles.link}>HOME</p>
           </Nav.Link> 
-          <Nav.Link as={NavLink} to="/projects" className='text-light' >
+          <Nav.Link href="/projects" className="text-light">
             <p className={styles.link}>PROJECTS</p>
-          </Nav.Link> 
+          </Nav.Link>
           <Nav.Link as={NavLink} to="/contact" className='text-light' >
             <p className={styles.link}>CONTACT</p>
           </Nav.Link> 
