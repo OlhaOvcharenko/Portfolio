@@ -3,9 +3,47 @@ import Home from "./components/Pages/Home/Home";
 import Header from "./components/Views/Header/Header";
 import Footer from "./components/Views/Footer/Footer";
 import Projects from "./components/Pages/Projects/Projects";
+import { useDispatch, useSelector } from "react-redux";
+import { useState } from "react";
+import { loadProjectsRequest } from "./redux/projectsRedux";
+import { useEffect } from "react";
+import { getAllProjects } from "./redux/projectsRedux";
+import { Spinner } from "react-bootstrap";
 
-function App() {
+const App = () => {
+
+  const dispatch = useDispatch();
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    Promise.all([dispatch(loadProjectsRequest())])
+      .then(() => {
+        setTimeout(() => {
+          setLoading(false);
+        }, 2000);
+      })
+      .catch((error) => {
+        console.error('Error loading data:', error);
+        setLoading(false);
+      });
+  }, [dispatch]);
+  
+  const allProjects = useSelector(getAllProjects);
+  console.log(allProjects);
+ 
   return (
+    <div>
+    {loading ? (
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        <Spinner 
+          animation="grow" 
+          variant="secondary" 
+          style={{ width: '100px', height: '100px' }} 
+        />
+      <h2>Loading ...</h2>
+    </div>
+    ) : (
     <div>
       <Header />
       <Routes>
@@ -13,8 +51,10 @@ function App() {
         <Route path="/projects" element={<Projects />} />
       </Routes>
       <Footer />
+      </div>
+    )}
     </div>
   );
-}
+};
 
 export default App;

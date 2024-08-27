@@ -5,7 +5,6 @@ const app_module_1 = require("./app.module");
 const common_1 = require("@nestjs/common");
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
-    await app.listen(8000);
     app.enableCors({
         origin: 'http://localhost:3000',
         methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
@@ -13,6 +12,7 @@ async function bootstrap() {
     });
     app.useGlobalPipes(new common_1.ValidationPipe({ transform: true }));
     await app.enableShutdownHooks();
+    await app.listen(8000);
 }
 bootstrap();
 //# sourceMappingURL=main.js.map
