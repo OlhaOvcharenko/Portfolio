@@ -5,7 +5,7 @@ import axios from 'axios';
   
 
 /*SELECTORS*/
-export const getAllProjects = (state) => state.projects.data;
+export const getAllProjects = (state) => state.projects;
 
 /* ACTIONS */
 const reducerName = 'projects';
@@ -43,21 +43,16 @@ export const loadProjectsRequest = () => {
 const projectsReducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case DATA_PROJECTS:
-      return {
-        ...state,
-        data: action.payload,
-        error: null, 
-      };
-  
+      return action.payload;
+    case START_REQUEST:
+      return { ...state, requests: {...state.requests, [action.payload.name]: { pending: true, error: null, success: false }} };
+    case END_REQUEST:
+      return { ...state, requests: { ...state.requests, [action.payload.name]: { pending: false, error: null, success: true }} };
     case ERROR_REQUEST:
-      return {
-        ...state,
-        error: action.payload.error,
-      };
-
+      return { ...state, requests: { ...state.requests, [action.payload.name]: { pending: false, error: action.payload.error, success: false }} };
     default:
       return state;
-    }
   };
+}
   
-  export default projectsReducer;
+export default projectsReducer;
