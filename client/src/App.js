@@ -3,11 +3,10 @@ import Home from "./components/Pages/Home/Home";
 import Header from "./components/Views/Header/Header";
 import Footer from "./components/Views/Footer/Footer";
 import Projects from "./components/Pages/Projects/Projects";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch} from "react-redux";
 import { useState } from "react";
 import { loadProjectsRequest } from "./redux/projectsRedux";
 import { useEffect } from "react";
-import { getAllProjects } from "./redux/projectsRedux";
 import { Spinner } from "react-bootstrap";
 
 const App = () => {
@@ -29,9 +28,6 @@ const App = () => {
       });
   }, [dispatch]);
   
-  const allProjects = useSelector(getAllProjects);
-  console.log(allProjects);
- 
   return (
     <div>
     {loading ? (
