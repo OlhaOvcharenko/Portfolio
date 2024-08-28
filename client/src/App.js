@@ -20,7 +20,7 @@ const App = () => {
       .then(() => {
         setTimeout(() => {
           setLoading(false);
-        }, 2000);
+        }, 1000);
       })
       .catch((error) => {
         console.error('Error loading data:', error);
@@ -47,7 +47,7 @@ const App = () => {
         <Route path="/projects" element={<Projects />} />
       </Routes>
       <Footer />
-      </div>
+    </div>
     )}
     </div>
   );

@@ -81,7 +81,7 @@ a {
   text-decoration: none; 
 }
 
-img:hover {
+.mediaImg:hover {
   width: 55px;
   height: 55px;
   transition: 0.3s ease; 
@@ -97,30 +97,3 @@ img:hover {
   }
 }
 
-
-/*.mediaIcons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-}
-  
-.mediaIcons::before,
-.mediaIcons::after {
-content: '';
-  position: absolute;
-  width: 40%; 
-  height: 2px;
-  background-color: $color-bright; 
-  z-index: 0;
-}
-
-.mediaIcons::before {
-  left: 25px;
-}
-
-.mediaIcons::after {
-  right: 25px;
-}
-*/

@@ -1,0 +1,20 @@
+@import '../../../styles/settings.scss';
+@import '../../../styles/typography.scss';
+
+.projectBox {
+    border: 1px solid #ddd; /* Light border for distinction */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures the image fits within the container */
+    margin: 16px; /* Spacing between boxes */
+    padding: 16px; /* Inner spacing */
+    text-align: center; /* Center align text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .mainImg {
+    width: 500px; /* Ensures the image takes up the full width of the container */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    max-height: 300px; /* Limits the height of the image */
+    border-radius: 4px; /* Optional: rounded corners for the image */
+  }
