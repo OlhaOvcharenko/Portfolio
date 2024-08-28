@@ -10,7 +10,7 @@ const Projects = () => {
   console.log(allProjects)
     return (
     <div className={styles.container}>
-      <h1>All Projects</h1>
+      <h1 className="text-center">All Projects</h1>
       {allProjects.map(project => (
         <ProjectBox key={project.id} project={project}/>
       ))}
