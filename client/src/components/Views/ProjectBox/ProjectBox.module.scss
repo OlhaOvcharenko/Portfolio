@@ -11,6 +11,8 @@
 
 
 .titleBox{
+  display: flex;
+  justify-content: space-between; 
   padding: 10px;
   position: absolute;
   bottom: 40px;
@@ -23,6 +25,21 @@
   color: $color-on-background;
   font-style: italic;
   padding-left: 20px;
+  padding-right: 50px;
+}
+
+.btnBox {
+  background-color: rgba(106, 105, 105, 0.2); 
+  margin-right: 40px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-family: $font-text;
+  letter-spacing: 3px;
+}
+
+.btnBox::after{
+  color: $color-on-background;
+  width: 5px;
 }
 .mainImg {
   width: 800px; 

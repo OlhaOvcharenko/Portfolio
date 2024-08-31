@@ -6,6 +6,9 @@ const ProjectBox = ({ project }) => {
     <div className={styles.projectBox}>
       <div className={styles.titleBox}>
         <h2 className={styles.boxName}>{project.title}</h2>
+        <div className={styles.btnBox}>
+          Read more ⟶
+        </div>
       </div>
       <img 
         src={`${IMAGES_URL}/${project.mainImg}`} 
