@@ -1,0 +1,12 @@
+@import '../../../styles/settings.scss';
+
+
+.pageContainer {
+  background:  $color-on-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 50px;
+}

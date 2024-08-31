@@ -4,23 +4,14 @@
 
 .Intro {
   position: relative;
+  background-color: $color-on-background;
   height: 73vh;
   overflow: hidden;
-}
-
-.container {
-  height: 73vh;
-  background:  $color-on-background;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  padding-top: 50px;
 }
 
 
 .text {
-  margin-top: -50px;
   max-width: 600px;
   text-align: center;
   z-index: 1; 
