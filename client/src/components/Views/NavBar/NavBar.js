@@ -6,11 +6,13 @@ const NavBar = () => {
     <section className="NavBar">
       <Navbar expand="lg" className={styles.navContainer}>
         <Navbar.Brand href="#home" className='text-light pt-0 pb-0'>
+        <Nav.Link href="/" >
           <img 
             src="https://static.wixstatic.com/media/e6e940_daf929c2590b4e42ac8b8ee204a8f1ed~mv2.jpg" 
             alt="Brand Logo" 
             className={styles.img} 
           />
+        </Nav.Link>
         </Navbar.Brand>
         <span  className={styles.toggleBtn} >
           <Navbar.Toggle aria-controls="mobile-menu"/>
