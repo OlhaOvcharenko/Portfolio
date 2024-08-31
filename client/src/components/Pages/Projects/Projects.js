@@ -1,4 +1,4 @@
-import { Row, Container } from "react-bootstrap";
+import { Row, Container, Col } from "react-bootstrap";
 import styles from "../Projects/Projects.module.scss";
 import { useSelector } from "react-redux";
 import { getAllProjects } from "../../../redux/projectsRedux";
@@ -10,12 +10,18 @@ const Projects = () => {
 
   return (
     <div className={styles.containerProjects}>
-      <h1>All Projects</h1>
-        <Row xs={1} md={2} lg={2} className=" g-4 py-3">
+      <h1 className="text-center"><i>All Projects</i></h1>
+        <Container>
+          <Row lg={1}className=" g-4 py-3">
+          
           {allProjects.map(project => (
-          <ProjectBox key={project.id} project={project}/>  
-        ))}
+            <Col key={project.id} className="d-flex justify-content-center">
+              <ProjectBox project={project} />
+            </Col>
+          ))}
+         
       </Row>
+      </Container>
     </div>
   );
 }
