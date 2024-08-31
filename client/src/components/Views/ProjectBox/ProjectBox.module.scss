@@ -35,12 +35,11 @@
   border-radius: 25px;
   font-family: $font-text;
   letter-spacing: 3px;
+  color: $color-on-background;
+  text-decoration: none;
 }
 
-.btnBox::after{
-  color: $color-on-background;
-  width: 5px;
-}
+
 .mainImg {
   width: 800px; 
   height: auto; 
