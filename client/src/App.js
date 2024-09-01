@@ -8,6 +8,7 @@ import { useState } from "react";
 import { loadProjectsRequest } from "./redux/projectsRedux";
 import { useEffect } from "react";
 import { Spinner } from "react-bootstrap";
+import Contact from "./components/Pages/Contact/Contact";
 
 const App = () => {
 
@@ -45,6 +46,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </div>

@@ -25,7 +25,7 @@ const NavBar = () => {
           <Nav.Link href="/projects" className="text-light">
             <p className={styles.link}>PROJECTS</p>
           </Nav.Link>
-          <Nav.Link as={NavLink} to="/contact" className='text-light' >
+          <Nav.Link href="/contact" className='text-light' >
             <p className={styles.link}>CONTACT</p>
           </Nav.Link> 
           <Nav.Link as={NavLink} to="/about" className='text-light' >
