@@ -3,7 +3,8 @@ import { useSelector } from "react-redux";
 import { getAllProjects } from "../../../redux/projectsRedux";
 import ProjectBox from "../../Views/ProjectBox/ProjectBox";
 import PageContainer from "../../Common/PageContainer/PageContainer";
-import Arrow from "../../Common/Arrow/Arrow";
+import ArrowRight from "../../Common/ArrowRight/Arrow";
+import ArrowLeft from "../../Common/ArrowLeft/ArrowLeft";
 
 const Projects = () => {
 
@@ -11,7 +12,8 @@ const Projects = () => {
 
   return (
     <PageContainer>
-      <Arrow to="/contact"  />
+      <ArrowRight to="/contact"  />
+      <ArrowLeft to="/"/>
       <h1 className="text-center"><i>All Projects</i></h1>
       
         <Container>

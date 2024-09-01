@@ -1,6 +1,7 @@
 import PageContainer from "../../Common/PageContainer/PageContainer";
 import styles from "../Intro/Intro.module.scss";
-import Arrow from "../../Common/Arrow/Arrow";
+import Arrow from "../../Common/ArrowRight/Arrow";
+import ArrowRight from "../../Common/ArrowRight/Arrow";
 
 const Intro = () => (
   <section className={styles.Intro}>
@@ -11,7 +12,7 @@ const Intro = () => (
         <p>Explore my projects.</p>
         <p>Feel free to contact me, share your thoughts and ideas at ovcharenko.olga.2014@gmail.com.</p>
       </div>
-      <Arrow to="/projects" />
+      <ArrowRight to="/projects" />
     </PageContainer>
   </section>
 );

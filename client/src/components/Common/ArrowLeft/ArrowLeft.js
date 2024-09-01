@@ -1,7 +1,7 @@
-import styles from "../Arrow/Arrow.module.scss"
+import styles from "../ArrowLeft/ArrowLeft.module.scss"
 import { Link } from "react-router-dom";
 
-const Arrow = ({ to }) => (
+const ArrowLeft = ({ to }) => (
   <Link to={to} style={{ textDecoration: 'none', color: 'inherit', padding:'0', ...styles }}>
     <div className={styles.arrowContainer}>
       <span className={styles.arrow}></span>
@@ -9,5 +9,5 @@ const Arrow = ({ to }) => (
   </Link>
 );
   
-export default Arrow;
+export default ArrowLeft;
   
