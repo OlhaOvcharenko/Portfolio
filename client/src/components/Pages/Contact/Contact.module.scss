@@ -1,0 +1,47 @@
+@import '../../../styles/settings.scss';
+
+.contactBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 20px;
+  label {
+    color: $color-bright;
+  }
+  input {
+    background-color: $color-on-background;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 400px;
+    padding: 10px;
+  }
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.subTitle {
+  color: $color-bright;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+    textarea {
+      background-color: $color-on-background;
+      border: none;
+      border-bottom: 1px solid $color-bright;
+      width: 100%; 
+    }
+    label {
+      color: $color-bright 
+    }
+}
+
