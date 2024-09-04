@@ -34,14 +34,34 @@
   width: 900px;
   padding-bottom: 30px;
   margin: 0 auto;
-    textarea {
-      background-color: $color-on-background;
-      border: none;
-      border-bottom: 1px solid $color-bright;
-      width: 100%; 
-    }
-    label {
-      color: $color-bright 
-    }
+  textarea {
+    background-color: $color-on-background;
+    border: none;
+    border-bottom: 1px solid $color-bright;
+    width: 100%; 
+  }
+  label {
+    color: $color-bright 
+  }
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 50px 0;
+}
+.btnSubmit {
+  background-color: $color-bright; 
+  padding: 10px 28px;
+  border-radius: 25px;
+  border-color: $color-primary;
+  font-family: $font-text;
+  letter-spacing: 3px;
+  color: $color-on-background;
+  text-decoration: none;
+}
+
+.btnSubmit:hover {
+  background-color: $color-primary;
 }
 

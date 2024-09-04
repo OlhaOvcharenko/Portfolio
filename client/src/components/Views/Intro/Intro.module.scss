@@ -3,16 +3,19 @@
 
 
 .Intro {
-  position: relative;
-  background-color: $color-on-background;
-  height: 73vh;
-  overflow: hidden;
-  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  background-color: $color-on-background; 
+  height: 80vh;
 }
 
 
 .text {
-  max-width: 600px;
+  margin: 0 auto;
+  max-width: 800px;
   text-align: center;
   z-index: 1; 
   overflow: hidden; 

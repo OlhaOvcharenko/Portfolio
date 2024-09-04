@@ -32,12 +32,15 @@ const Contact = () => {
           </div>
         </div>
 
-          <div className={styles.textBox}>
-            <label htmlFor="message">Your Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-          </div>
+        <div className={styles.textBox}>
+          <label htmlFor="message">Your Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
 
-        <button type="submit" className="btn btn-primary">Send message</button>
+        <div className={styles.buttonWrapper}>
+          <button type="submit" className={styles.btnSubmit}>Send message</button>
+        </div>
+
       </form>
   </PageContainer>
   )
