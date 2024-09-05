@@ -6,7 +6,7 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 30px 0;
-  gap: 50px;
+  gap: 10rem;
 }
 
 .photoBox {
@@ -26,4 +26,14 @@
   flex: 1;
   padding-top: 100px;
   width: 600px;
+}
+
+.textBox::after {
+  content: '';
+  display: block;
+  width: 600px;
+  height: 1px;
+  background-color: $color-bright;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
