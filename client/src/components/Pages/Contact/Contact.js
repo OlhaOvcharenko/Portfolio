@@ -7,8 +7,8 @@ import styles from "../Contact/Contact.module.scss"
 const Contact = () => {
   return (
     <PageContainer>
-      <ArrowRight to="/About" />
-      <ArrowLeft to="/projects" />
+      <ArrowRight to="/" />
+      <ArrowLeft to="/about" />
       <h1 className="text-center">Contact me</h1>
       <h3 className={styles.subTitle}>Interested in collaborating on a project or discussing a potential opportunity? </h3>
       <h3 className={styles.subTitle}>Feel free to reach out to me using the form below.</h3>

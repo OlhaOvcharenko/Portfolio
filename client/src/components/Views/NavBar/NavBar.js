@@ -25,12 +25,12 @@ const NavBar = () => {
           <Nav.Link href="/projects" className="text-light">
             <p className={styles.link}>PROJECTS</p>
           </Nav.Link>
+          <Nav.Link href="/about" className='text-light' >
+            <p className={styles.link}>ABOUT</p>
+          </Nav.Link>      
           <Nav.Link href="/contact" className='text-light' >
             <p className={styles.link}>CONTACT</p>
-          </Nav.Link> 
-          <Nav.Link as={NavLink} to="/about" className='text-light' >
-            <p className={styles.link}>ABOUT</p>
-          </Nav.Link>              
+          </Nav.Link>         
         </Nav>
       </Navbar.Collapse>
     </Navbar>
