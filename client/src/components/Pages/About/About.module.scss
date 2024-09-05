@@ -1,0 +1,29 @@
+@import '../../../styles/settings.scss';
+
+.aboutBox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px 0;
+  gap: 50px;
+}
+
+.photoBox {
+  width: 400px;
+  overflow: hidden; 
+  box-shadow: 0 0 50px rgba(203, 221, 72, 0.3); 
+}
+
+.photoBox img {
+  width: 100%;
+  height: auto; 
+  object-fit: cover; 
+  display: block;
+}
+
+.infoBox{
+  flex: 1;
+  padding-top: 100px;
+  width: 600px;
+}
