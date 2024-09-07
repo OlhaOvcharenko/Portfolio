@@ -10,4 +10,10 @@ export class ProjectsService {
     return this.prismaService.project.findMany();
   }
 
+  public getById(id: Project['id']): Promise<Project | null> {
+    return this.prismaService.project.findUnique({
+      where: { id },
+    })
+  }
+
 }
