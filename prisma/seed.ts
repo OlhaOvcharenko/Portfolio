@@ -16,7 +16,7 @@ function getProjects() {
         
         The project leverages modern web technologies and best practices, making it a valuable resource for learning and implementing e-commerce solutions.`,
       mainImg: 'jewshop_main.jpg',
-      gallery: ''
+      gallery: 'jw_img_1.jpg, jw_img_2.jpg'
     },
     { id: '7p8q9r0s',
       title: 'Music Service',
