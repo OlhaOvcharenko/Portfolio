@@ -19,6 +19,11 @@ let ProjectsService = class ProjectsService {
     getAll() {
         return this.prismaService.project.findMany();
     }
+    getById(id) {
+        return this.prismaService.project.findUnique({
+            where: { id },
+        });
+    }
 };
 exports.ProjectsService = ProjectsService;
 exports.ProjectsService = ProjectsService = __decorate([
