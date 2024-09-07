@@ -13,8 +13,8 @@ datasource db {
 model Project {
   id          String             @id @default(uuid())
   title       String
-  paragrapgh1 String
-  paragrapgh2 String
+  paragrapgh1 String   @db.Text // Change from String to Text
+  paragrapgh2 String   @db.Text // Same for paragrapgh2 if it might also hold large data
   mainImg     String
   gallery     String
 
