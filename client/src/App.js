@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import { Spinner } from "react-bootstrap";
 import Contact from "./components/Pages/Contact/Contact";
 import About from "./components/Pages/About/About";
+import SingleProject from "./components/Features/SingleProject/SingleProject";
 
 const App = () => {
 
@@ -49,6 +50,7 @@ const App = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About/>} />
+        <Route path="/projects/:id" element={<SingleProject />} />
       </Routes>
       <Footer />
     </div>

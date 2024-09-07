@@ -7,7 +7,7 @@ const ProjectBox = ({ project }) => {
     <div className={styles.projectBox}>
       <div className={styles.titleBox}>
         <h2 className={styles.boxName}>{project.title}</h2>
-        <Link style={{ textDecoration: 'none', color: 'inherit', padding:'0' }}>
+        <Link to={`/projects/${project.id}`} style={{ textDecoration: 'none', color: 'inherit', padding:'0' }}>
           <div className={styles.btnBox}>
             Read more ⟶
           </div>

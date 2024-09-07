@@ -1,6 +1,5 @@
 import PageContainer from "../../Common/PageContainer/PageContainer";
 import styles from "../Intro/Intro.module.scss";
-import Arrow from "../../Common/ArrowRight/Arrow";
 import ArrowRight from "../../Common/ArrowRight/Arrow";
 
 const Intro = () => (
