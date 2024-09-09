@@ -4,13 +4,16 @@ import { useSelector } from "react-redux";
 import { getProjectById } from "../../../redux/projectsRedux";
 import styles from "../SingleProject/SingleProject.module.scss";
 import { IMAGES_URL } from "../../../config";
+import Gallery from "../../Views/Gallery/Gallery";
+
 
 const SingleProject = () => {
   const {id} = useParams();
 
   const projectData = useSelector(state => getProjectById(state, id))
   console.log(projectData);
-
+  const galleryImages = projectData.gallery.split(',');
+  console.log(galleryImages)
   return (
     <PageContainer>
       <div className={styles.decorativeBox}>
@@ -19,6 +22,7 @@ const SingleProject = () => {
          />
       </div>
       <h1 className={styles.title}>{projectData.title}</h1>
+      <Gallery galleryImages={galleryImages} />
     </PageContainer>
 
   )
