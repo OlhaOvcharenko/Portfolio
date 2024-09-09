@@ -23,6 +23,10 @@ const SingleProject = () => {
       </div>
       <h1 className={styles.title}>{projectData.title}</h1>
       <Gallery galleryImages={galleryImages} />
+      <div className="mx-5">
+        <p>{projectData.paragrapgh1}</p>
+        <p>{projectData.paragrapgh2}</p>
+      </div>
     </PageContainer>
 
   )
