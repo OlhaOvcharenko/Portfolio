@@ -11,9 +11,9 @@ const SingleProject = () => {
   const {id} = useParams();
 
   const projectData = useSelector(state => getProjectById(state, id))
-  console.log(projectData);
   const galleryImages = projectData.gallery.split(',');
-  console.log(galleryImages)
+  const paragraphText = projectData.paragrapgh2;
+
   return (
     <PageContainer>
       <div className={styles.decorativeBox}>
@@ -22,10 +22,13 @@ const SingleProject = () => {
          />
       </div>
       <h1 className={styles.title}>{projectData.title}</h1>
+      <p className={styles.textContainer}>{projectData.paragrapgh1}</p>
       <Gallery galleryImages={galleryImages} />
-      <div className="mx-5">
-        <p>{projectData.paragrapgh1}</p>
-        <p>{projectData.paragrapgh2}</p>
+      <div className={styles.textContainer}>
+        <h2 className={styles.subTitle}>Features</h2>
+        {paragraphText.split('\n').map((line, index) => (
+          <p key={index} >{line}</p>
+        ))}
       </div>
     </PageContainer>
 
