@@ -22,7 +22,7 @@ const SingleProject = () => {
          />
       </div>
       <h1 className={styles.title}>{projectData.title}</h1>
-      <p className={styles.textContainer}>{projectData.paragrapgh1}</p>
+      <p className={styles.overview }>{projectData.paragrapgh1}</p>
       <Gallery galleryImages={galleryImages} />
       <div className={styles.textContainer}>
         <h2 className={styles.subTitle}>Features</h2>
