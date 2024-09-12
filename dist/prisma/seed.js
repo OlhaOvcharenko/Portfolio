@@ -29,7 +29,7 @@ function getProjects() {
 
         This project provides a well-rounded example of music streaming functionality in a modern web application, showcasing best practices for building dynamic, data-driven SPAs.`,
             mainImg: 'musicservice_main.jpg',
-            gallery: ''
+            gallery: 'musicservice_img_1.jpg,musicservice_img_2.jpg,musicservice_img_3.jpg,musicservice_img_4.jpg,musicservice_img_5.jpg,musicservice_img_6.jpg'
         },
         {
             id: '1t2u3v4w',
