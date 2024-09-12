@@ -7,13 +7,20 @@
 }
 
 .selectedImageContainer {
-  margin-bottom: 20px;
+  margin: 20px 0 60px;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  box-shadow: 8px 8px 0 rgba(242, 244, 240, 0.5);
+  overflow: visible;
 }
 
 .selectedImage {
-  width: 800px;
-  height: 650px;
-  object-fit: fit;
+  position: absolute;
+  max-width: 110%;
+  width: 100%;
+  height: 100%;
+
 }
 
 .slider {
