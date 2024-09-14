@@ -17,9 +17,9 @@ const SingleProject = () => {
   return (
     <PageContainer>
       <h1 className={styles.title}>{projectData.title}</h1>
-      <p className={styles.overview }>{projectData.paragrapgh1}</p>
       <Gallery galleryImages={galleryImages} />
       <div className={styles.textContainer}>
+        <p>{projectData.paragrapgh1}</p>
         <h2 className={styles.subTitle}>Features</h2>
         {paragraphText.split('\n').map((line, index) => (
           <p key={index} >{line}</p>
