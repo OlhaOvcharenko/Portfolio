@@ -16,11 +16,6 @@ const SingleProject = () => {
 
   return (
     <PageContainer>
-      <div className={styles.decorativeBox}>
-        <img src={`${IMAGES_URL}/item_img.jpg`} 
-          alt={projectData.title}  className={styles.decorativeImg}
-         />
-      </div>
       <h1 className={styles.title}>{projectData.title}</h1>
       <p className={styles.overview }>{projectData.paragrapgh1}</p>
       <Gallery galleryImages={galleryImages} />
