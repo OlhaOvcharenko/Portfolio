@@ -3,9 +3,7 @@ import PageContainer from "../../Common/PageContainer/PageContainer";
 import { useSelector } from "react-redux";
 import { getProjectById } from "../../../redux/projectsRedux";
 import styles from "../SingleProject/SingleProject.module.scss";
-import { IMAGES_URL } from "../../../config";
 import Gallery from "../../Views/Gallery/Gallery";
-
 
 const SingleProject = () => {
   const {id} = useParams();
@@ -26,7 +24,6 @@ const SingleProject = () => {
         ))}
       </div>
     </PageContainer>
-
   )
 }
 
