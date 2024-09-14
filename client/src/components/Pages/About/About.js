@@ -6,7 +6,7 @@ import styles from "../About/About.module.scss";
 
 
 const About = () => {
-    const profileImageUrl = `${IMAGES_URL}/profile_photo.jpg`;
+
     return (
       <PageContainer>
         <h1>A few words about me...</h1>
@@ -22,9 +22,6 @@ const About = () => {
             <div>
                 <p>[...click here to check CV]</p>
             </div>
-          </div>
-          <div className={styles.photoBox}>
-            <img src={profileImageUrl} alt="Brand Logo" />
           </div>
         </div>
       </PageContainer>
