@@ -1,5 +1,24 @@
 @import '../../../styles/settings.scss';
 
+.titleBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navBtn {
+  background-color: $color-on-background;
+  color: $color-bright;
+  padding: 10px;
+  margin: 0  10rem;
+  border: none;
+  font-size: 25px;
+}
+.navBtn:hover {
+  text-decoration: underline;
+}
 
 .subTitle {
  color: $color-bright;

@@ -15,11 +15,14 @@ const SingleProject = () => {
 
   return (
     <PageContainer>
-      <h1>{projectData.title}</h1>
+      <div className={styles.titleBox}>
+        <button className={styles.navBtn}>Previous</button>
+        <h1>{projectData.title}</h1>
+        <button className={styles.navBtn}>Next</button>
+      </div>
       <Container>
         <Row className="justify-content-center">
-
-          <Col xs={12} lg={8} className="pt-3">
+          <Col xs={12} lg={8} className="pt-5">
             <Gallery galleryImages={galleryImages} />
           </Col>
           <Col xs={12} lg={8}>
@@ -31,7 +34,6 @@ const SingleProject = () => {
               ))}
             </div>
           </Col>
-
         </Row>
       </Container>
     </PageContainer>
