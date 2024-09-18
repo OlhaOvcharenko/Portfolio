@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import PageContainer from "../../Common/PageContainer/PageContainer";
-import { Col, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import { getProjectById } from "../../../redux/projectsRedux";
 import styles from "../SingleProject/SingleProject.module.scss";
@@ -15,23 +15,25 @@ const SingleProject = () => {
 
   return (
     <PageContainer>
-      <h1 className={styles.title}>{projectData.title}</h1>
-      <Row className="px-5 justify-content-center">
+      <h1>{projectData.title}</h1>
+      <Container>
+        <Row className="justify-content-center">
 
-        <Col md={8} className="px-5">
-          <Gallery galleryImages={galleryImages} />
-        </Col>
-        <Col md={8} className="px-5">
-          <div>
-            <p className="pt-5">{projectData.paragrapgh1}</p>
-            <h2 className={styles.subTitle}>Features</h2>
-            {paragraphText.split('\n').map((line, index) => (
-            <p key={index} >{line}</p>
-            ))}
-          </div>
-        </Col>
+          <Col xs={12} lg={8} className="pt-3">
+            <Gallery galleryImages={galleryImages} />
+          </Col>
+          <Col xs={12} lg={8}>
+            <div>
+              <p className="pt-5">{projectData.paragrapgh1}</p>
+              <h2 className={styles.subTitle}>Features</h2>
+              {paragraphText.split('\n').map((line, index) => (
+              <p key={index} >{line}</p>
+              ))}
+            </div>
+          </Col>
 
-      </Row>
+        </Row>
+      </Container>
     </PageContainer>
   )
 }
