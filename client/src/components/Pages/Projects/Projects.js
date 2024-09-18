@@ -15,7 +15,6 @@ const Projects = () => {
       <ArrowRight to="/contact"  />
       <ArrowLeft to="/"/>
       <h1 className="text-center"><i>All Projects</i></h1>
-      
         <Container>
           <Row lg={1}className=" g-4 py-3">
           {allProjects.map(project => (

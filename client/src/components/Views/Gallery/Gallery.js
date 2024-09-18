@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { IMAGES_URL } from '../../../config';
-
 import styles from '../Gallery/Gallery.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
@@ -14,6 +13,7 @@ const Gallery = ({ galleryImages }) => {
   const handleClickImage = (image) => {
     setSelectedImage(`${IMAGES_URL}/${image}`);
   };
+  
   return (
     <div className={styles.galleryWrapper}>
       <div className={styles.selectedImageContainer}>
