@@ -24,3 +24,26 @@
  color: $color-bright;
 }
 
+//transition
+.fade-enter {
+  opacity: 0;
+  transform: scale(0.98);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 700ms ease-in-out, transform 700ms ease-in-out; /* Increased duration */
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 700ms ease-in-out, transform 700ms ease-in-out; /* Increased duration */
+}
+
