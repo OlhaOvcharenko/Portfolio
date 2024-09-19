@@ -1,21 +1,28 @@
 @import '../../../styles/settings.scss';
 
 .titleBox {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto; 
   align-items: center;
   width: 100%;
+  padding: 5px;
+  top: 0;
+  left: 0;
+}
+
+.pageTitle {
+  text-align: center;
+  grid-column: 2;
 }
 
 .navBtn {
   background-color: $color-on-background;
   color: $color-bright;
   padding: 10px;
-  margin: 0  10rem;
   border: none;
   font-size: 25px;
 }
+
 .navBtn:hover {
   text-decoration: underline;
 }

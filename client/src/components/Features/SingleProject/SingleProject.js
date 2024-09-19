@@ -43,7 +43,7 @@ const SingleProject = () => {
               <button onClick={() => navigate(-1)} className={styles.navBtn}>
                 Previous
               </button>
-              <h1>{projectData.title}</h1>
+              <h1 className={styles.pageTitle}>{projectData.title}</h1>
               {currentIndex < allProjectIds.length - 1 && (
                 <button onClick={handleNext} className={styles.navBtn}>
                   Next
