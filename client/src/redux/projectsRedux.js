@@ -6,7 +6,8 @@ import axios from 'axios';
 
 /*SELECTORS*/
 export const getAllProjects = (state) => state.projects.data;
-export const getProjectById = (state, projectId) => { return state.projects.data.find(project => project.id == projectId )}
+export const getProjectById = (state, projectId) => { return state.projects.data.find(project => project.id == projectId )};
+export const allIds = (state) => state.projects.data.map(project => project.id);
 /* ACTIONS */
 const reducerName = 'projects';
 const createActionName = (name) => `app/${reducerName}/${name}`;

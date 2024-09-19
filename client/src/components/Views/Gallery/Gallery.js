@@ -3,19 +3,24 @@ import { IMAGES_URL } from '../../../config';
 import styles from '../Gallery/Gallery.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
-
+import { useEffect } from 'react';
 
 const Gallery = ({ galleryImages }) => {
-  const [selectedImage, setSelectedImage] = useState(
-    `${IMAGES_URL}/${galleryImages[0]}`
-  );
+  const [selectedImage, setSelectedImage] = useState('');
+
+  useEffect(() => {
+    if (galleryImages.length > 0) {
+      setSelectedImage(`${IMAGES_URL}/${galleryImages[0]}`);
+    }
+  }, [galleryImages]);
 
   const handleClickImage = (image) => {
     setSelectedImage(`${IMAGES_URL}/${image}`);
   };
-  
+
   return (
     <div className={styles.galleryWrapper}>
+      
       <div className={styles.selectedImageContainer}>
         <img src={selectedImage} alt="Selected" className={styles.selectedImage} />
       </div>
