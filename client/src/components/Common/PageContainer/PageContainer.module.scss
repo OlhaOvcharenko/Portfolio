@@ -9,10 +9,29 @@
   align-items: center;
   position: relative;
   padding-bottom: 50px;
-  opacity: 1;
-  transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out, 0.8s ease-in-out;
+  opacity: 0; 
+  transform: scale(0.95) rotate(1deg); 
 }
 
-.pageContainer.fade-out {
-  opacity: 0;
+.fade-in {
+  opacity: 1;
+  transform: scale(1) rotate(0deg); 
+}
+
+.fade-out {
+  opacity: 0.5;
+  transform: scale(1.05) rotate(0deg); 
+  filter: blur(2px); 
+}
+
+@keyframes backgroundAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.pageContainer {
+  background-size: 200% 200%;
+  animation: backgroundAnimation 3s ease infinite
 }

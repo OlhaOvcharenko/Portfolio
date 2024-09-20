@@ -9,8 +9,7 @@ const About = () => {
 
   return (
     <PageContainer toNext={"/contact"} toPrevious={"/projects"} >
-      <div>
-      <h1>A few words about me...</h1>
+      <h1 className="text-center">A few words about me...</h1>
       <div className={styles.aboutBox}>
         <div  className={styles.infoBox}>
           <div  className={styles.textBox}>
@@ -25,7 +24,6 @@ const About = () => {
             ]</a>
           </div>
         </div>
-      </div>
       </div>
     </PageContainer>
   );
