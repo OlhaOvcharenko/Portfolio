@@ -1,8 +1,8 @@
 import styles from "../ArrowRight/Arrow.module.scss"
 import { Link } from "react-router-dom";
 
-const ArrowRight = ({ to }) => (
-  <Link to={to} style={{ textDecoration: 'none', color: 'inherit', padding:'0', ...styles }}>
+const ArrowRight = ({ onClick }) => (
+  <Link onClick={onClick} style={{ textDecoration: 'none', color: 'inherit', padding:'0', ...styles }}>
     <div className={styles.arrowContainer}>
       <span className={styles.arrow}></span>
     </div>

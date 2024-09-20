@@ -9,4 +9,10 @@
   align-items: center;
   position: relative;
   padding-bottom: 50px;
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.pageContainer.fade-out {
+  opacity: 0;
 }
