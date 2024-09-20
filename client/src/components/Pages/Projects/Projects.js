@@ -11,9 +11,7 @@ const Projects = () => {
   const allProjects = useSelector(getAllProjects);
 
   return (
-    <PageContainer>
-      <ArrowRight to="/contact"  />
-      <ArrowLeft to="/"/>
+    <PageContainer  toNext={"/contact"} toPrevious={"/"}>
       <h1 className="text-center"><i>All Projects</i></h1>
         <Container>
           <Row lg={1}className=" g-4 py-3">

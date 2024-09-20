@@ -1,14 +1,11 @@
-import ArrowLeft from "../../Common/ArrowLeft/ArrowLeft"
-import ArrowRight from "../../Common/ArrowRight/Arrow"
+
 import PageContainer from "../../Common/PageContainer/PageContainer"
 import styles from "../Contact/Contact.module.scss"
 
 
 const Contact = () => {
   return (
-    <PageContainer>
-      <ArrowRight to="/" />
-      <ArrowLeft to="/about" />
+    <PageContainer  toNext={"/"} toPrevious={"/about"}>
       <h1 className="text-center">Contact me</h1>
       <h3 className={styles.subTitle}>Interested in collaborating on a project or discussing a potential opportunity? </h3>
       <h3 className={styles.subTitle}>Feel free to reach out to me using the form below.</h3>
