@@ -23,8 +23,9 @@
 .aboutLink {
   color: $color-bright;
   font-size: 25px;
+  transition: all 0.6s ease;
 }
 
-.aboutLink:hover {
+.aboutLink:hover{
   text-decoration: underline;
 }

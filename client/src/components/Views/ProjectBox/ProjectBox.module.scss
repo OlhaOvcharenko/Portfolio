@@ -37,6 +37,7 @@
   letter-spacing: 3px;
   color: $color-on-background;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 
@@ -46,4 +47,9 @@
   object-fit: cover; 
   max-height: 400px;
   border-radius: 4px;
+}
+
+.btnBox:hover {
+  text-decoration: underline;
+  scale: 1.1;
 }
