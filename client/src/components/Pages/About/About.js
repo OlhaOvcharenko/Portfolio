@@ -20,7 +20,10 @@ const About = () => {
                 <p>This is a space where I showcase my work and share my journey in the world of web development.</p>
             </div>
             <div>
-                <p>[...click here to check CV]</p>
+              <a href="https://drive.google.com/file/d/1iATl3N3q0vb-_kndF9ub40NTyj32G0g_/view?usp=sharing"
+                target="_blank" className={styles.aboutLink} > 
+               [...click here to check CV
+              ]</a>
             </div>
           </div>
         </div>
