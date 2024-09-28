@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
-const PageContainer = ({ children, toNext, toPrevious}) => {
+const PageContainer = ({ arrowContainerClass,children, toNext, toPrevious}) => {
   const [isExiting, setIsExiting] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ const PageContainer = ({ children, toNext, toPrevious}) => {
 
   return (
     <div className={`${styles.pageContainer} ${isMounted ? styles['fade-in'] : ''} ${isExiting ? styles['fade-out'] : ''}`} >
-      <div>
+      <div className={`${styles.arrowContainer} ${arrowContainerClass}`}>
         <ArrowLeft onClick={() => handleNavigation(toPrevious)} />
         <ArrowRight onClick={() => handleNavigation(toNext)} />
       </div>
