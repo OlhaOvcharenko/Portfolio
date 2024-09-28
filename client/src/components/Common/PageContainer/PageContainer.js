@@ -1,5 +1,5 @@
 import ArrowLeft from '../ArrowLeft/ArrowLeft';
-import ArrowRight from '../ArrowRight/Arrow';
+import ArrowRight from '../ArrowRight/ArrowRight';
 import styles from '../PageContainer/PageContainer.module.scss'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
@@ -24,8 +24,10 @@ const PageContainer = ({ children, toNext, toPrevious}) => {
 
   return (
     <div className={`${styles.pageContainer} ${isMounted ? styles['fade-in'] : ''} ${isExiting ? styles['fade-out'] : ''}`} >
-      <ArrowLeft onClick={() => handleNavigation(toPrevious)} />
-      <ArrowRight onClick={() => handleNavigation(toNext)} />
+      <div>
+        <ArrowLeft onClick={() => handleNavigation(toPrevious)} />
+        <ArrowRight onClick={() => handleNavigation(toNext)} />
+      </div>
       <div>
         {children}
       </div>

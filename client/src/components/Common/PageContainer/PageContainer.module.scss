@@ -3,16 +3,18 @@
 
 .pageContainer {
   background:  $color-on-background;
+  position: relative;  
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
+  min-height: 100vh; 
+  padding: 0 20px;
   padding-bottom: 50px;
   transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out, 0.8s ease-in-out;
   opacity: 0; 
   transform: scale(0.95) rotate(1deg); 
 }
+
 
 .fade-in {
   opacity: 1;

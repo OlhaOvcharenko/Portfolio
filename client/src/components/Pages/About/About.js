@@ -1,9 +1,5 @@
 import PageContainer from "../../Common/PageContainer/PageContainer";
-import ArrowRight from "../../Common/ArrowRight/Arrow";
-import ArrowLeft from "../../Common/ArrowLeft/ArrowLeft";
 import styles from "../About/About.module.scss";
-import { useNavigate } from "react-router-dom";
-import { useState } from "react";
 
 const About = () => {
 

@@ -6,7 +6,7 @@ const Home = () => {
     <div>
       <PageContainer  toNext={"/projects"} toPrevious={"/contact"}>
         <Intro />
-       </PageContainer>
+      </PageContainer>
     </div>
   )
 };

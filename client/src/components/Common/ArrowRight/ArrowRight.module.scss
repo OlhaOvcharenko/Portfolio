@@ -1,16 +1,15 @@
 
 .arrowContainer {
   position: fixed;
-  top:50%;
-  right: 20px;
-  background-color: rgba(255, 255, 255, 0.112); 
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100px; 
-  height: 40vh; 
   display: flex;
   justify-content: center;
   align-items: center;
+  top: 50%;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.112); 
+  transform: translateY(-50%);
+  width: 100px; 
+  height: 40vh; 
   animation: bounce 3s infinite; 
 }
 

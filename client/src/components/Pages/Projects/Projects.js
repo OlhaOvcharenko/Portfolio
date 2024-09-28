@@ -3,8 +3,7 @@ import { useSelector } from "react-redux";
 import { getAllProjects } from "../../../redux/projectsRedux";
 import ProjectBox from "../../Views/ProjectBox/ProjectBox";
 import PageContainer from "../../Common/PageContainer/PageContainer";
-import ArrowRight from "../../Common/ArrowRight/Arrow";
-import ArrowLeft from "../../Common/ArrowLeft/ArrowLeft";
+
 
 const Projects = () => {
 

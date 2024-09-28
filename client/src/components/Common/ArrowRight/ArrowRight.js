@@ -1,4 +1,4 @@
-import styles from "../ArrowRight/Arrow.module.scss"
+import styles from "../ArrowRight/ArrowRight.module.scss"
 import { Link } from "react-router-dom";
 
 const ArrowRight = ({ onClick }) => (
