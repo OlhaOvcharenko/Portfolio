@@ -13,7 +13,7 @@ const Projects = () => {
     <PageContainer  toNext={"/contact"} toPrevious={"/"}>
       <h1 className="text-center"><i>All Projects</i></h1>
         <Container>
-          <Row lg={1}className=" g-4 py-3">
+          <Row lg={2}className=" g-4 py-3">
           {allProjects.map(project => (
             <Col key={project.id} className="d-flex justify-content-center">
               <ProjectBox project={project} />

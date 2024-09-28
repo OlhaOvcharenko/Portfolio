@@ -12,13 +12,12 @@
 
 .titleBox{
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   padding: 10px;
   position: absolute;
   bottom: 40px;
-  width: 100%;
   background-color: $color-primary;
-  width: 800px;
+  width: 600px;
 }
 
 .boxName {
@@ -30,8 +29,8 @@
 
 .btnBox {
   background-color: rgba(106, 105, 105, 0.2); 
-  margin-right: 40px;
   padding: 10px 25px;
+  margin-right: 20px;
   border-radius: 25px;
   font-family: $font-text;
   letter-spacing: 3px;
@@ -42,7 +41,7 @@
 
 
 .mainImg {
-  width: 800px; 
+  width: 600px; 
   height: auto; 
   object-fit: cover; 
   max-height: 400px;
