@@ -28,7 +28,7 @@ const SingleProject = () => {
   };
 
   return (
-    <PageContainer>
+    <PageContainer arrowContainerClass={styles.arrows} >
       <TransitionGroup>
         <CSSTransition key={id} timeout={2000} 
         classNames={{
