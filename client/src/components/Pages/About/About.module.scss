@@ -2,8 +2,11 @@
 
 .aboutBox {
   display: flex;
-  margin: 10px 0px;
+  justify-content: center; 
+  align-items: center; 
+  padding: 7rem;
   text-align: center;
+  flex-direction: column;
 }
 
 .infoBox{

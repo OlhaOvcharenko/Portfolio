@@ -4,12 +4,11 @@
 
 .Intro {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; 
+  align-items: center; 
+  padding: 10rem;
   text-align: center;
-  padding: 0;
-  background-color: $color-on-background; 
-  height: 80vh;
+  flex-direction: column;
 }
 
 

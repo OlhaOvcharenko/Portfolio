@@ -1,16 +1,13 @@
 @import '../../../styles/settings.scss';
 
 
-html, body {
+body {
+  background-color: $color-on-background;
   margin: 0;
   padding: 0;
   min-height: 100%; 
   display: flex;
   flex-direction: column;
-}
-
-body {
-  background-color: $color-on-background;
 }
 
 .pageContainer {
@@ -27,11 +24,9 @@ body {
 
 .arrowContainer {
   display: flex;                   
-  justify-content: space-between; 
-  position: relative;             
+  justify-content: space-between;              
   margin-top: 20px;              
-  padding: 0 10px; 
-  top: 70px;                                          
+  padding: 0 10px;                                         
   position: absolute;               
   top: 50%;                      
 }
