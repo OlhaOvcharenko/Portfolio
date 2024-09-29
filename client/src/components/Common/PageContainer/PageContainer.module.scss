@@ -1,19 +1,28 @@
 @import '../../../styles/settings.scss';
 
 
-.pageContainer {
-  background:  $color-on-background;
-  position: relative;  
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%; 
   display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: $color-on-background;
+}
+
+.pageContainer {
+  background-size: cover; 
+  display: flex;
+  flex-grow: 1; 
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  min-height: 75vh; 
   padding: 0 20px;
-  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out, 0.8s ease-in-out;
-  opacity: 0; 
+  opacity: 0;
   transform: scale(0.95) rotate(1deg); 
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
 .arrowContainer {
